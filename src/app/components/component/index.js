@@ -1,8 +1,9 @@
 import template from './index.html';
+import './style.less';
 
 class controller {
   constructor() {
-    this.text = 'Hello WORLD!';
+    this.text = 'Hello World!';
   }
 }
 

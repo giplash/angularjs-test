@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "webpack-dev-server",
+    "server": "webpack-dev-server --mode=development",
     "start": "npm run server",
     "build": "webpack --production"
   },
@@ -34,10 +34,13 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
     "raw-loader": "^0.5.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.1.10",
+    "write-file-webpack-plugin": "^4.4.1"
   }
 }
