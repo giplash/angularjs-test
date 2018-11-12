@@ -1,13 +1,9 @@
 import template from './index.html';
-import './style.less';
-
 class controller {
-  constructor() {
-    this.text = 'Hello World!';    
-  }
-  
-  func() {
-    alert('Hi!');
+  constructor() {}
+
+  $onInit() {
+    console.log('$onInit is called');
   }
 }
 
@@ -15,8 +11,8 @@ export default {
   template,
   controller: controller,
   controllerAs: 'ctrl',
-  name: 'component',
+  name: 'childComponent',
   bindings: {
-    author: '@'
+    sayHi: '&'
   }
 };

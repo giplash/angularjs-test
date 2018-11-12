@@ -446,7 +446,30 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! angular */ \"./node_modules/angular/index.js\");\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(angular__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/component */ \"./src/app/components/component/index.js\");\n/* harmony import */ var _style_main_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style/main.less */ \"./src/app/style/main.less\");\n/* harmony import */ var _style_main_less__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_main_less__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nconst MODULE_NAME = 'app';\n/* harmony default export */ __webpack_exports__[\"default\"] = (MODULE_NAME);\nangular__WEBPACK_IMPORTED_MODULE_0___default.a.module(MODULE_NAME, []).component(_components_component__WEBPACK_IMPORTED_MODULE_1__[\"default\"].name, _components_component__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n\n//# sourceURL=webpack:///./src/app/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! angular */ \"./node_modules/angular/index.js\");\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(angular__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/component */ \"./src/app/components/component/index.js\");\n/* harmony import */ var _components_childComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/childComponent */ \"./src/app/components/childComponent/index.js\");\n/* harmony import */ var _style_main_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style/main.less */ \"./src/app/style/main.less\");\n/* harmony import */ var _style_main_less__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_main_less__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\nconst MODULE_NAME = 'app';\n/* harmony default export */ __webpack_exports__[\"default\"] = (MODULE_NAME);\nangular__WEBPACK_IMPORTED_MODULE_0___default.a.module(MODULE_NAME, []).component(_components_component__WEBPACK_IMPORTED_MODULE_1__[\"default\"].name, _components_component__WEBPACK_IMPORTED_MODULE_1__[\"default\"]).component(_components_childComponent__WEBPACK_IMPORTED_MODULE_2__[\"default\"].name, _components_childComponent__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n\n//# sourceURL=webpack:///./src/app/app.js?");
+
+/***/ }),
+
+/***/ "./src/app/components/childComponent/index.html":
+/*!******************************************************!*\
+  !*** ./src/app/components/childComponent/index.html ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div>\\r\\n    <button ng-click=\\\"ctrl.sayHi()\\\">Click me!</button>\\r\\n</div>\"\n\n//# sourceURL=webpack:///./src/app/components/childComponent/index.html?");
+
+/***/ }),
+
+/***/ "./src/app/components/childComponent/index.js":
+/*!****************************************************!*\
+  !*** ./src/app/components/childComponent/index.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ \"./src/app/components/childComponent/index.html\");\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nclass controller {\n  constructor() {}\n\n  $onInit() {\n    console.log('$onInit is called');\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  template: (_index_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  controller: controller,\n  controllerAs: 'ctrl',\n  name: 'childComponent',\n  bindings: {\n    sayHi: '&'\n  }\n});\n\n//# sourceURL=webpack:///./src/app/components/childComponent/index.js?");
 
 /***/ }),
 
@@ -457,7 +480,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var angu
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<div>\\r\\n    <h1>{{ ctrl.text }}</h1>\\r\\n    <img src=\\\"img/logo.png\\\" alt=\\\"\\\">\\r\\n</div>\\r\\n\\r\\n\"\n\n//# sourceURL=webpack:///./src/app/components/component/index.html?");
+eval("module.exports = \"<div>\\r\\n    <h1>{{ ctrl.text }}</h1>\\r\\n    <p>Author - {{ ctrl.author  }} </p>\\r\\n    <child-component say-hi=\\\"ctrl.func()\\\"></child-component>\\r\\n</div>\\r\\n\\r\\n\"\n\n//# sourceURL=webpack:///./src/app/components/component/index.html?");
 
 /***/ }),
 
@@ -469,7 +492,7 @@ eval("module.exports = \"<div>\\r\\n    <h1>{{ ctrl.text }}</h1>\\r\\n    <img s
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ \"./src/app/components/component/index.html\");\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.less */ \"./src/app/components/component/style.less\");\n/* harmony import */ var _style_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_less__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass controller {\n  constructor() {\n    this.text = 'Hello World!';\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  template: (_index_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  controller: controller,\n  controllerAs: 'ctrl',\n  name: 'component'\n});\n\n//# sourceURL=webpack:///./src/app/components/component/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ \"./src/app/components/component/index.html\");\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.less */ \"./src/app/components/component/style.less\");\n/* harmony import */ var _style_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_less__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass controller {\n  constructor() {\n    this.text = 'Hello World!';\n  }\n\n  func() {\n    alert('Hi!');\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  template: (_index_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  controller: controller,\n  controllerAs: 'ctrl',\n  name: 'component',\n  bindings: {\n    author: '@'\n  }\n});\n\n//# sourceURL=webpack:///./src/app/components/component/index.js?");
 
 /***/ }),
 
