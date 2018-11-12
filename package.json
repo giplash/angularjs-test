@@ -1,0 +1,43 @@
+{
+  "name": "angularjs-project-structure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "webpack-dev-server",
+    "start": "npm run server",
+    "build": "webpack --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giplash/angularjs-project-structure.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giplash/angularjs-project-structure/issues"
+  },
+  "homepage": "https://github.com/giplash/angularjs-project-structure#readme",
+  "dependencies": {
+    "angular": "^1.7.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/helpers": "^7.1.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-generator": "^6.26.1",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^1.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
