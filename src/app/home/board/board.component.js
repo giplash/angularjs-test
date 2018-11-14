@@ -1,12 +1,8 @@
-import template from './index.html';
+import template from './board.template.html';
 import './index.less';
 
 class Controller {
     constructor() {
-    }
-
-    $onInit() {
-        console.log(this);
     }
 }
 

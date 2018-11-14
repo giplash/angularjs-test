@@ -1,4 +1,4 @@
-import template from './index.html';
+import template from './boardItem.template.html';
 import './index.less';
 
 class Controller {

@@ -6,7 +6,6 @@ export default function BoardItemDirective() {
             attrs.$set('draggable', 'true');         
 
             element.on('dragstart', function(e) {
-                console.log('dragstart');
                 e.dataTransfer.setData('text/plain', '');
                 e.dataTransfer.setData('itemId', scope.$ctrl.itemId);
                 e.dataTransfer.setData('boardId', scope.$ctrl.boardId);

@@ -468,42 +468,77 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! angular */ \"./node_modules/angular/index.js\");\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(angular__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_main_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style/main.less */ \"./src/app/style/main.less\");\n/* harmony import */ var _style_main_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_main_less__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _home_homeComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/homeComponent */ \"./src/app/home/homeComponent.js\");\n/* harmony import */ var _home_board_boardComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/board/boardComponent */ \"./src/app/home/board/boardComponent.js\");\n/* harmony import */ var _home_boardItem_boardItemComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/boardItem/boardItemComponent */ \"./src/app/home/boardItem/boardItemComponent.js\");\n/* harmony import */ var _home_board_boardDirective__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/board/boardDirective */ \"./src/app/home/board/boardDirective.js\");\n/* harmony import */ var _home_boardItem_boarditemDirective__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/boardItem/boarditemDirective */ \"./src/app/home/boardItem/boarditemDirective.js\");\n\n\n\n\n\n\n\nconst MODULE_NAME = 'app';\n/* harmony default export */ __webpack_exports__[\"default\"] = (MODULE_NAME);\nangular__WEBPACK_IMPORTED_MODULE_0___default.a.module(MODULE_NAME, []).component(_home_homeComponent__WEBPACK_IMPORTED_MODULE_2__[\"default\"].$name, _home_homeComponent__WEBPACK_IMPORTED_MODULE_2__[\"default\"]).component(_home_boardItem_boardItemComponent__WEBPACK_IMPORTED_MODULE_4__[\"default\"].$name, _home_boardItem_boardItemComponent__WEBPACK_IMPORTED_MODULE_4__[\"default\"]).component(_home_board_boardComponent__WEBPACK_IMPORTED_MODULE_3__[\"default\"].$name, _home_board_boardComponent__WEBPACK_IMPORTED_MODULE_3__[\"default\"]).directive(_home_board_boardDirective__WEBPACK_IMPORTED_MODULE_5__[\"default\"].$name, _home_board_boardDirective__WEBPACK_IMPORTED_MODULE_5__[\"default\"]).directive(_home_boardItem_boarditemDirective__WEBPACK_IMPORTED_MODULE_6__[\"default\"].$name, _home_boardItem_boarditemDirective__WEBPACK_IMPORTED_MODULE_6__[\"default\"]);\n\n//# sourceURL=webpack:///./src/app/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! angular */ \"./node_modules/angular/index.js\");\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(angular__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_main_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style/main.less */ \"./src/app/style/main.less\");\n/* harmony import */ var _style_main_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_main_less__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/home.component */ \"./src/app/home/home.component.js\");\n/* harmony import */ var _home_board_board_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/board/board.component */ \"./src/app/home/board/board.component.js\");\n/* harmony import */ var _home_boardItem_boadItem_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/boardItem/boadItem.component */ \"./src/app/home/boardItem/boadItem.component.js\");\n/* harmony import */ var _error404_error404_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./error404/error404.component */ \"./src/app/error404/error404.component.js\");\n/* harmony import */ var _home_board_board_directive__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/board/board.directive */ \"./src/app/home/board/board.directive.js\");\n/* harmony import */ var _home_boardItem_boardItem_directive__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home/boardItem/boardItem.directive */ \"./src/app/home/boardItem/boardItem.directive.js\");\n/* harmony import */ var _app_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.router */ \"./src/app/app.router.js\");\n\n\n\n\n\n\n\n\n\nconst MODULE_NAME = 'app';\n/* harmony default export */ __webpack_exports__[\"default\"] = (MODULE_NAME);\nangular__WEBPACK_IMPORTED_MODULE_0___default.a.module(MODULE_NAME, []) //.config(router)\n.component(_home_home_component__WEBPACK_IMPORTED_MODULE_2__[\"default\"].$name, _home_home_component__WEBPACK_IMPORTED_MODULE_2__[\"default\"]).component(_home_boardItem_boadItem_component__WEBPACK_IMPORTED_MODULE_4__[\"default\"].$name, _home_boardItem_boadItem_component__WEBPACK_IMPORTED_MODULE_4__[\"default\"]).component(_home_board_board_component__WEBPACK_IMPORTED_MODULE_3__[\"default\"].$name, _home_board_board_component__WEBPACK_IMPORTED_MODULE_3__[\"default\"]).component(_error404_error404_component__WEBPACK_IMPORTED_MODULE_5__[\"default\"].$name, _error404_error404_component__WEBPACK_IMPORTED_MODULE_5__[\"default\"]).directive(_home_board_board_directive__WEBPACK_IMPORTED_MODULE_6__[\"default\"].$name, _home_board_board_directive__WEBPACK_IMPORTED_MODULE_6__[\"default\"]).directive(_home_boardItem_boardItem_directive__WEBPACK_IMPORTED_MODULE_7__[\"default\"].$name, _home_boardItem_boardItem_directive__WEBPACK_IMPORTED_MODULE_7__[\"default\"]);\n\n//# sourceURL=webpack:///./src/app/app.js?");
 
 /***/ }),
 
-/***/ "./src/app/home/board/boardComponent.js":
-/*!**********************************************!*\
-  !*** ./src/app/home/board/boardComponent.js ***!
-  \**********************************************/
+/***/ "./src/app/app.router.js":
+/*!*******************************!*\
+  !*** ./src/app/app.router.js ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ \"./src/app/home/board/index.html\");\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.less */ \"./src/app/home/board/index.less\");\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass Controller {\n  constructor() {}\n\n  $onInit() {\n    console.log(this);\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  $name: 'board',\n  template: (_index_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  controller: Controller,\n  bindings: {\n    boardData: '&',\n    moveItem: '&'\n  }\n});\n\n//# sourceURL=webpack:///./src/app/home/board/boardComponent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home/home.component */ \"./src/app/home/home.component.js\");\n/* harmony import */ var _error404_error404_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./error404/error404.component */ \"./src/app/error404/error404.component.js\");\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function ($stateProvider) {\n  const states = [{\n    name: 'home',\n    url: '/home',\n    component: _home_home_component__WEBPACK_IMPORTED_MODULE_0__[\"default\"].$name\n  }, {\n    name: '404',\n    url: '/*',\n    component: _error404_error404_component__WEBPACK_IMPORTED_MODULE_1__[\"default\"].$name\n  }];\n  states.forEach(item => $stateProvider.state(item));\n});\n\n//# sourceURL=webpack:///./src/app/app.router.js?");
 
 /***/ }),
 
-/***/ "./src/app/home/board/boardDirective.js":
-/*!**********************************************!*\
-  !*** ./src/app/home/board/boardDirective.js ***!
-  \**********************************************/
+/***/ "./src/app/error404/error404.component.js":
+/*!************************************************!*\
+  !*** ./src/app/error404/error404.component.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return BoardDirective; });\nBoardDirective.$name = 'boardDirective';\nfunction BoardDirective() {\n  return {\n    restrict: 'A',\n    link: function (scope, element, attrs) {\n      element.on('dragover', function (e) {\n        e.preventDefault();\n        console.log('dragover');\n      });\n      element.on('drop', function (e) {\n        e.preventDefault();\n        const itemId = e.dataTransfer.getData(\"itemId\");\n        const oldBoardId = e.dataTransfer.getData(\"boardId\");\n        const newBoardId = scope.$ctrl.boardData().id;\n        scope.$ctrl.moveItem({\n          oldBoardId,\n          newBoardId,\n          itemId\n        });\n      });\n    }\n  };\n}\n\n//# sourceURL=webpack:///./src/app/home/board/boardDirective.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _error404_template_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./error404.template.html */ \"./src/app/error404/error404.template.html\");\n/* harmony import */ var _error404_template_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_error404_template_html__WEBPACK_IMPORTED_MODULE_0__);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  template: (_error404_template_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  $name: 'error404'\n});\n\n//# sourceURL=webpack:///./src/app/error404/error404.component.js?");
 
 /***/ }),
 
-/***/ "./src/app/home/board/index.html":
-/*!***************************************!*\
-  !*** ./src/app/home/board/index.html ***!
-  \***************************************/
+/***/ "./src/app/error404/error404.template.html":
+/*!*************************************************!*\
+  !*** ./src/app/error404/error404.template.html ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<div class=\\\"board\\\" board-directive>\\r\\n    <board-item ng-repeat=\\\"item in $ctrl.boardData().items\\\" text={{item.text}} item-id={{item.id}} board-id={{$ctrl.boardData().id}}></board-item>\\r\\n</div>\"\n\n//# sourceURL=webpack:///./src/app/home/board/index.html?");
+eval("module.exports = \"<h2>Error 404, page is not found</h2>\"\n\n//# sourceURL=webpack:///./src/app/error404/error404.template.html?");
+
+/***/ }),
+
+/***/ "./src/app/home/board/board.component.js":
+/*!***********************************************!*\
+  !*** ./src/app/home/board/board.component.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _board_template_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./board.template.html */ \"./src/app/home/board/board.template.html\");\n/* harmony import */ var _board_template_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_board_template_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.less */ \"./src/app/home/board/index.less\");\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass Controller {\n  constructor() {}\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  $name: 'board',\n  template: (_board_template_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  controller: Controller,\n  bindings: {\n    boardData: '&',\n    moveItem: '&'\n  }\n});\n\n//# sourceURL=webpack:///./src/app/home/board/board.component.js?");
+
+/***/ }),
+
+/***/ "./src/app/home/board/board.directive.js":
+/*!***********************************************!*\
+  !*** ./src/app/home/board/board.directive.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return BoardDirective; });\nBoardDirective.$name = 'boardDirective';\nfunction BoardDirective() {\n  return {\n    restrict: 'A',\n    link: function (scope, element, attrs) {\n      element.on('dragover', function (e) {\n        e.preventDefault();\n      });\n      element.on('drop', function (e) {\n        e.preventDefault();\n        const itemId = e.dataTransfer.getData(\"itemId\");\n        const oldBoardId = e.dataTransfer.getData(\"boardId\");\n        const newBoardId = scope.$ctrl.boardData().id;\n        scope.$ctrl.moveItem({\n          oldBoardId,\n          newBoardId,\n          itemId\n        });\n      });\n    }\n  };\n}\n\n//# sourceURL=webpack:///./src/app/home/board/board.directive.js?");
+
+/***/ }),
+
+/***/ "./src/app/home/board/board.template.html":
+/*!************************************************!*\
+  !*** ./src/app/home/board/board.template.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div class=\\\"board\\\" board-directive>\\r\\n    <board-item ng-repeat=\\\"item in $ctrl.boardData().items\\\" text={{item.text}} item-id={{item.id}} board-id={{$ctrl.boardData().id}}></board-item>\\r\\n</div>\"\n\n//# sourceURL=webpack:///./src/app/home/board/board.template.html?");
 
 /***/ }),
 
@@ -518,38 +553,38 @@ eval("\nvar content = __webpack_require__(/*! !../../../../node_modules/css-load
 
 /***/ }),
 
-/***/ "./src/app/home/boardItem/boardItemComponent.js":
+/***/ "./src/app/home/boardItem/boadItem.component.js":
 /*!******************************************************!*\
-  !*** ./src/app/home/boardItem/boardItemComponent.js ***!
+  !*** ./src/app/home/boardItem/boadItem.component.js ***!
   \******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ \"./src/app/home/boardItem/index.html\");\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.less */ \"./src/app/home/boardItem/index.less\");\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass Controller {\n  constructor() {}\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  $name: 'boardItem',\n  controller: Controller,\n  template: (_index_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  bindings: {\n    text: '@',\n    itemId: '@',\n    boardId: '@'\n  }\n});\n\n//# sourceURL=webpack:///./src/app/home/boardItem/boardItemComponent.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _boardItem_template_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./boardItem.template.html */ \"./src/app/home/boardItem/boardItem.template.html\");\n/* harmony import */ var _boardItem_template_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_boardItem_template_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.less */ \"./src/app/home/boardItem/index.less\");\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass Controller {\n  constructor() {}\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  $name: 'boardItem',\n  controller: Controller,\n  template: (_boardItem_template_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  bindings: {\n    text: '@',\n    itemId: '@',\n    boardId: '@'\n  }\n});\n\n//# sourceURL=webpack:///./src/app/home/boardItem/boadItem.component.js?");
 
 /***/ }),
 
-/***/ "./src/app/home/boardItem/boarditemDirective.js":
-/*!******************************************************!*\
-  !*** ./src/app/home/boardItem/boarditemDirective.js ***!
-  \******************************************************/
+/***/ "./src/app/home/boardItem/boardItem.directive.js":
+/*!*******************************************************!*\
+  !*** ./src/app/home/boardItem/boardItem.directive.js ***!
+  \*******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return BoardItemDirective; });\nBoardItemDirective.$name = 'boardItemDirective';\nfunction BoardItemDirective() {\n  return {\n    restrict: 'A',\n    link: function (scope, element, attrs) {\n      attrs.$set('draggable', 'true');\n      element.on('dragstart', function (e) {\n        console.log('dragstart');\n        e.dataTransfer.setData('text/plain', '');\n        e.dataTransfer.setData('itemId', scope.$ctrl.itemId);\n        e.dataTransfer.setData('boardId', scope.$ctrl.boardId);\n      });\n    }\n  };\n}\n\n//# sourceURL=webpack:///./src/app/home/boardItem/boarditemDirective.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return BoardItemDirective; });\nBoardItemDirective.$name = 'boardItemDirective';\nfunction BoardItemDirective() {\n  return {\n    restrict: 'A',\n    link: function (scope, element, attrs) {\n      attrs.$set('draggable', 'true');\n      element.on('dragstart', function (e) {\n        e.dataTransfer.setData('text/plain', '');\n        e.dataTransfer.setData('itemId', scope.$ctrl.itemId);\n        e.dataTransfer.setData('boardId', scope.$ctrl.boardId);\n      });\n    }\n  };\n}\n\n//# sourceURL=webpack:///./src/app/home/boardItem/boardItem.directive.js?");
 
 /***/ }),
 
-/***/ "./src/app/home/boardItem/index.html":
-/*!*******************************************!*\
-  !*** ./src/app/home/boardItem/index.html ***!
-  \*******************************************/
+/***/ "./src/app/home/boardItem/boardItem.template.html":
+/*!********************************************************!*\
+  !*** ./src/app/home/boardItem/boardItem.template.html ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<div class=\\\"board__item\\\" board-item-directive>\\r\\n    <span>{{ $ctrl.text }}</span>\\r\\n</div>\\r\\n\"\n\n//# sourceURL=webpack:///./src/app/home/boardItem/index.html?");
+eval("module.exports = \"<div class=\\\"board__item\\\" board-item-directive>\\r\\n    <span>{{ $ctrl.text }}</span>\\r\\n</div>\\r\\n\"\n\n//# sourceURL=webpack:///./src/app/home/boardItem/boardItem.template.html?");
 
 /***/ }),
 
@@ -564,26 +599,15 @@ eval("\nvar content = __webpack_require__(/*! !../../../../node_modules/css-load
 
 /***/ }),
 
-/***/ "./src/app/home/homeComponent.js":
-/*!***************************************!*\
-  !*** ./src/app/home/homeComponent.js ***!
-  \***************************************/
+/***/ "./src/app/home/home.component.js":
+/*!****************************************!*\
+  !*** ./src/app/home/home.component.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ \"./src/app/home/index.html\");\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! angular */ \"./node_modules/angular/index.js\");\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(angular__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.less */ \"./src/app/home/index.less\");\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nclass Controller {\n  constructor($scope) {\n    this.$scope = $scope;\n    this.boards = [{\n      id: 1,\n      items: [{\n        boardId: 1,\n        id: 'qewr',\n        text: 'text 1'\n      }, {\n        boardId: 1,\n        id: 'qeasdfwr',\n        text: 'text 2'\n      }, {\n        boardId: 1,\n        id: 'kjnk',\n        text: 'text 3'\n      }]\n    }, {\n      id: 2,\n      items: [{\n        boardId: 2,\n        id: 'jghj',\n        text: 'text 4'\n      }, {\n        boardId: 2,\n        id: 'kjgju',\n        text: 'text 5'\n      }]\n    }];\n  }\n\n  moveItem(oldBoardId, newBoardId, itemId) {\n    if (oldBoardId == newBoardId) {\n      return;\n    }\n\n    const oldBoard = this.boards.find(item => item.id == oldBoardId);\n    const newBoard = this.boards.find(item => item.id == newBoardId);\n    const item = oldBoard.items.find(item => item.id == itemId);\n    item.boardId = newBoardId;\n    newBoard.items.push(item);\n    oldBoard.items = oldBoard.items.filter(item => item.id != itemId);\n    this.$scope.$digest();\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  template: (_index_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  controller: Controller,\n  $name: 'home'\n});\n\n//# sourceURL=webpack:///./src/app/home/homeComponent.js?");
-
-/***/ }),
-
-/***/ "./src/app/home/index.html":
-/*!*********************************!*\
-  !*** ./src/app/home/index.html ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = \"<div class=\\\"home\\\">\\r\\n    <board ng-repeat=\\\"board in $ctrl.boards\\\" board-data=\\\"board\\\" move-item=\\\"$ctrl.moveItem(oldBoardId, newBoardId, itemId)\\\"></board>\\r\\n</div>\"\n\n//# sourceURL=webpack:///./src/app/home/index.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_template_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.template.html */ \"./src/app/home/index.template.html\");\n/* harmony import */ var _index_template_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_template_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.less */ \"./src/app/home/index.less\");\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass Controller {\n  constructor($scope) {\n    this.$scope = $scope;\n    this.boards = [{\n      id: 1,\n      items: [{\n        boardId: 1,\n        id: 'qewr',\n        text: 'text 1'\n      }, {\n        boardId: 1,\n        id: 'qeasdfwr',\n        text: 'text 2'\n      }, {\n        boardId: 1,\n        id: 'kjnk',\n        text: 'text 3'\n      }]\n    }, {\n      id: 2,\n      items: [{\n        boardId: 2,\n        id: 'jghj',\n        text: 'text 4'\n      }, {\n        boardId: 2,\n        id: 'kjgju',\n        text: 'text 5'\n      }]\n    }];\n  }\n\n  moveItem(oldBoardId, newBoardId, itemId) {\n    if (oldBoardId == newBoardId) {\n      return;\n    }\n\n    const oldBoard = this.boards.find(item => item.id == oldBoardId);\n    const newBoard = this.boards.find(item => item.id == newBoardId);\n    const item = oldBoard.items.find(item => item.id == itemId);\n    item.boardId = newBoardId;\n    newBoard.items.push(item);\n    oldBoard.items = oldBoard.items.filter(item => item.id != itemId);\n    this.$scope.$digest();\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  template: (_index_template_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  controller: Controller,\n  $name: 'home'\n});\n\n//# sourceURL=webpack:///./src/app/home/home.component.js?");
 
 /***/ }),
 
@@ -595,6 +619,17 @@ eval("module.exports = \"<div class=\\\"home\\\">\\r\\n    <board ng-repeat=\\\"
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/less-loader/dist/cjs.js!./index.less */ \"./node_modules/css-loader/index.js!./node_modules/less-loader/dist/cjs.js!./src/app/home/index.less\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/app/home/index.less?");
+
+/***/ }),
+
+/***/ "./src/app/home/index.template.html":
+/*!******************************************!*\
+  !*** ./src/app/home/index.template.html ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div class=\\\"home\\\">    \\r\\n    <board ng-repeat=\\\"board in $ctrl.boards\\\" board-data=\\\"board\\\" move-item=\\\"$ctrl.moveItem(oldBoardId, newBoardId, itemId)\\\"></board>\\r\\n</div>\"\n\n//# sourceURL=webpack:///./src/app/home/index.template.html?");
 
 /***/ }),
 

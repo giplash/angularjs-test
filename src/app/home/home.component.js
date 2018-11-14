@@ -1,5 +1,4 @@
-import template from './index.html';
-import angular from 'angular';
+import template from './index.template.html';
 import './index.less';
 
 class Controller {

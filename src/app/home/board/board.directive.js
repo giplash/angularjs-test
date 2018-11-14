@@ -6,7 +6,6 @@ export default function BoardDirective() {
             
             element.on('dragover', function(e) {
                 e.preventDefault();
-                console.log('dragover');
             })
 
             element.on('drop', function(e) {
