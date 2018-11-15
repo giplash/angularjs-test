@@ -1205,7 +1205,18 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../node_module
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/app/common/header/index.less?./node_modules/css-loader!./node_modules/less-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"header {\\n  width: 100%;\\n  display: flex;\\n  justify-content: center;\\n  margin-bottom: 20px;\\n  border-bottom: 2px solid #000;\\n  padding-bottom: 10px;\\n  font-size: 20px;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/app/common/header/index.less?./node_modules/css-loader!./node_modules/less-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/less-loader/dist/cjs.js!./src/app/login/index.less":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/less-loader/dist/cjs.js!./src/app/login/index.less ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".login__title {\\n  text-align: center;\\n}\\n.login__controls {\\n  margin: 0 auto;\\n  text-align: center;\\n  display: flex;\\n  justify-content: center;\\n  margin-bottom: 20px;\\n}\\n.login__control {\\n  display: block;\\n  font-size: 16px;\\n  color: #000;\\n  text-decoration: none;\\n  padding: 5px 15px;\\n  border: 1px solid #000;\\n}\\n.login__control--active {\\n  background: #40355e;\\n  color: #fff;\\n}\\n.login__form {\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  flex-direction: column;\\n}\\n.login__form-row {\\n  display: flex;\\n  flex-direction: column;\\n  align-items: flex-start;\\n  margin-bottom: 10px;\\n}\\n.login__form-input {\\n  padding: 5px;\\n  min-width: 300px;\\n  max-width: 400px;\\n  width: 100%;\\n}\\n.login__form-submit {\\n  background: #fff;\\n  border: 1px solid #8c8c8c;\\n  border-radius: 3px;\\n  padding: 5px 10px;\\n  cursor: pointer;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/app/login/index.less?./node_modules/css-loader!./node_modules/less-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -1216,7 +1227,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../node_module
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/app/style/main.less?./node_modules/css-loader!./node_modules/less-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"* {\\n  box-sizing: border-box;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/app/style/main.less?./node_modules/css-loader!./node_modules/less-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -1524,7 +1535,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! angular */ \"./node_modules/angular/index.js\");\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(angular__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _uirouter_angularjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @uirouter/angularjs */ \"./node_modules/@uirouter/angularjs/lib-esm/index.js\");\n/* harmony import */ var _style_main_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style/main.less */ \"./src/app/style/main.less\");\n/* harmony import */ var _style_main_less__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_main_less__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ \"./src/app/app.component.js\");\n/* harmony import */ var _cabinet_cabinet_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./cabinet/cabinet.component */ \"./src/app/cabinet/cabinet.component.js\");\n/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./login/login.component */ \"./src/app/login/login.component.js\");\n/* harmony import */ var _cabinet_home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cabinet/home/home.component */ \"./src/app/cabinet/home/home.component.js\");\n/* harmony import */ var _common_header_header_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./common/header/header.component */ \"./src/app/common/header/header.component.js\");\n/* harmony import */ var _app_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.router */ \"./src/app/app.router.js\");\n\n\n\n\n\n\n\n\n\nconst MODULE_NAME = 'app';\n/* harmony default export */ __webpack_exports__[\"default\"] = (MODULE_NAME);\nangular__WEBPACK_IMPORTED_MODULE_0___default.a.module(MODULE_NAME, ['ui.router']).config(_app_router__WEBPACK_IMPORTED_MODULE_8__[\"default\"]).component(_app_component__WEBPACK_IMPORTED_MODULE_3__[\"default\"].$name, _app_component__WEBPACK_IMPORTED_MODULE_3__[\"default\"]).component(_login_login_component__WEBPACK_IMPORTED_MODULE_5__[\"default\"].$name, _login_login_component__WEBPACK_IMPORTED_MODULE_5__[\"default\"]).component(_cabinet_cabinet_component__WEBPACK_IMPORTED_MODULE_4__[\"default\"].$name, _cabinet_cabinet_component__WEBPACK_IMPORTED_MODULE_4__[\"default\"]).component(_cabinet_home_home_component__WEBPACK_IMPORTED_MODULE_6__[\"default\"].$name, _cabinet_home_home_component__WEBPACK_IMPORTED_MODULE_6__[\"default\"]).component(_common_header_header_component__WEBPACK_IMPORTED_MODULE_7__[\"default\"].$name, _common_header_header_component__WEBPACK_IMPORTED_MODULE_7__[\"default\"]);\n\n//# sourceURL=webpack:///./src/app/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! angular */ \"./node_modules/angular/index.js\");\n/* harmony import */ var angular__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(angular__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _uirouter_angularjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @uirouter/angularjs */ \"./node_modules/@uirouter/angularjs/lib-esm/index.js\");\n/* harmony import */ var _style_main_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style/main.less */ \"./src/app/style/main.less\");\n/* harmony import */ var _style_main_less__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_main_less__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ \"./src/app/app.component.js\");\n/* harmony import */ var _cabinet_cabinet_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./cabinet/cabinet.component */ \"./src/app/cabinet/cabinet.component.js\");\n/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./login/login.component */ \"./src/app/login/login.component.js\");\n/* harmony import */ var _cabinet_home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cabinet/home/home.component */ \"./src/app/cabinet/home/home.component.js\");\n/* harmony import */ var _common_header_header_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./common/header/header.component */ \"./src/app/common/header/header.component.js\");\n/* harmony import */ var _login_signIn_signIn_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./login/signIn/signIn.component */ \"./src/app/login/signIn/signIn.component.js\");\n/* harmony import */ var _login_signUp_signUp_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./login/signUp/signUp.component */ \"./src/app/login/signUp/signUp.component.js\");\n/* harmony import */ var _app_router_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app.router.js */ \"./src/app/app.router.js\");\n/* harmony import */ var _cabinet_cabinet_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./cabinet/cabinet.router */ \"./src/app/cabinet/cabinet.router.js\");\n/* harmony import */ var _login_login_router__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./login/login.router */ \"./src/app/login/login.router.js\");\n/* harmony import */ var _common_services_login_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./common/services/login.service */ \"./src/app/common/services/login.service.js\");\n/* harmony import */ var _login_signUp_checkPassword_directive__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./login/signUp/checkPassword.directive */ \"./src/app/login/signUp/checkPassword.directive.js\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nconst MODULE_NAME = 'app';\n/* harmony default export */ __webpack_exports__[\"default\"] = (MODULE_NAME);\n\nangular__WEBPACK_IMPORTED_MODULE_0___default.a.module(MODULE_NAME, ['ui.router']).config(_app_router_js__WEBPACK_IMPORTED_MODULE_10__[\"default\"]).config(_cabinet_cabinet_router__WEBPACK_IMPORTED_MODULE_11__[\"default\"]).config(_login_login_router__WEBPACK_IMPORTED_MODULE_12__[\"default\"]).service(_common_services_login_service__WEBPACK_IMPORTED_MODULE_13__[\"default\"].$name, _common_services_login_service__WEBPACK_IMPORTED_MODULE_13__[\"default\"]).directive(_login_signUp_checkPassword_directive__WEBPACK_IMPORTED_MODULE_14__[\"default\"].$name, _login_signUp_checkPassword_directive__WEBPACK_IMPORTED_MODULE_14__[\"default\"]).component(_app_component__WEBPACK_IMPORTED_MODULE_3__[\"default\"].$name, _app_component__WEBPACK_IMPORTED_MODULE_3__[\"default\"]).component(_login_login_component__WEBPACK_IMPORTED_MODULE_5__[\"default\"].$name, _login_login_component__WEBPACK_IMPORTED_MODULE_5__[\"default\"]).component(_cabinet_cabinet_component__WEBPACK_IMPORTED_MODULE_4__[\"default\"].$name, _cabinet_cabinet_component__WEBPACK_IMPORTED_MODULE_4__[\"default\"]).component(_cabinet_home_home_component__WEBPACK_IMPORTED_MODULE_6__[\"default\"].$name, _cabinet_home_home_component__WEBPACK_IMPORTED_MODULE_6__[\"default\"]).component(_common_header_header_component__WEBPACK_IMPORTED_MODULE_7__[\"default\"].$name, _common_header_header_component__WEBPACK_IMPORTED_MODULE_7__[\"default\"]).component(_login_signUp_signUp_component__WEBPACK_IMPORTED_MODULE_9__[\"default\"].$name, _login_signUp_signUp_component__WEBPACK_IMPORTED_MODULE_9__[\"default\"]).component(_login_signIn_signIn_component__WEBPACK_IMPORTED_MODULE_8__[\"default\"].$name, _login_signIn_signIn_component__WEBPACK_IMPORTED_MODULE_8__[\"default\"]);\n\n//# sourceURL=webpack:///./src/app/app.js?");
 
 /***/ }),
 
@@ -1536,7 +1547,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var angu
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cabinet_home_home_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cabinet/home/home.component */ \"./src/app/cabinet/home/home.component.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function ($stateProvider) {\n  $stateProvider.state('home', {\n    url: '/',\n    views: {\n      cabinet: {\n        component: _cabinet_home_home_component__WEBPACK_IMPORTED_MODULE_0__[\"default\"].$name\n      }\n    }\n  });\n});\n\n//# sourceURL=webpack:///./src/app/app.router.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./login/login.component */ \"./src/app/login/login.component.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function ($stateProvider, $urlRouterProvider) {\n  $stateProvider.state({\n    name: 'app'\n  }).state({\n    name: 'app.login',\n    url: '/login',\n    component: _login_login_component__WEBPACK_IMPORTED_MODULE_0__[\"default\"].$name\n  });\n  $urlRouterProvider.otherwise('/');\n});\n\n//# sourceURL=webpack:///./src/app/app.router.js?");
 
 /***/ }),
 
@@ -1563,6 +1574,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cab
 
 /***/ }),
 
+/***/ "./src/app/cabinet/cabinet.router.js":
+/*!*******************************************!*\
+  !*** ./src/app/cabinet/cabinet.router.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home/home.component */ \"./src/app/cabinet/home/home.component.js\");\n/* harmony import */ var _cabinet_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cabinet.component */ \"./src/app/cabinet/cabinet.component.js\");\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function ($stateProvider) {\n  $stateProvider.state({\n    name: 'app.cabinet',\n    component: _cabinet_component__WEBPACK_IMPORTED_MODULE_1__[\"default\"].$name\n  }).state({\n    name: 'app.cabinet.home',\n    url: '/',\n    component: _home_home_component__WEBPACK_IMPORTED_MODULE_0__[\"default\"].$name\n  });\n});\n\n//# sourceURL=webpack:///./src/app/cabinet/cabinet.router.js?");
+
+/***/ }),
+
 /***/ "./src/app/cabinet/cabinet.template.html":
 /*!***********************************************!*\
   !*** ./src/app/cabinet/cabinet.template.html ***!
@@ -1570,7 +1593,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cab
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<tt-header></tt-header>\\r\\n<div ui-view=\\\"cabinet\\\"></div>\"\n\n//# sourceURL=webpack:///./src/app/cabinet/cabinet.template.html?");
+eval("module.exports = \"<tt-header></tt-header>\\r\\n<ui-view></ui-view>\"\n\n//# sourceURL=webpack:///./src/app/cabinet/cabinet.template.html?");
 
 /***/ }),
 
@@ -1582,7 +1605,18 @@ eval("module.exports = \"<tt-header></tt-header>\\r\\n<div ui-view=\\\"cabinet\\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_template_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.template.html */ \"./src/app/cabinet/home/index.template.html\");\n/* harmony import */ var _index_template_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_template_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.less */ \"./src/app/cabinet/home/index.less\");\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass Controller {\n  constructor($scope) {}\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  template: (_index_template_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  controller: Controller,\n  $name: 'ttHome'\n});\n\n//# sourceURL=webpack:///./src/app/cabinet/home/home.component.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_template_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.template.html */ \"./src/app/cabinet/home/home.template.html\");\n/* harmony import */ var _home_template_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_home_template_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.less */ \"./src/app/cabinet/home/index.less\");\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass Controller {\n  constructor($scope) {}\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  template: (_home_template_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  controller: Controller,\n  $name: 'ttHome'\n});\n\n//# sourceURL=webpack:///./src/app/cabinet/home/home.component.js?");
+
+/***/ }),
+
+/***/ "./src/app/cabinet/home/home.template.html":
+/*!*************************************************!*\
+  !*** ./src/app/cabinet/home/home.template.html ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<h1>Home page</h1>\\r\\n<a ui-sref=\\\"app.login\\\">login</a>\\r\\n<tt-board-list></tt-board-list>\"\n\n//# sourceURL=webpack:///./src/app/cabinet/home/home.template.html?");
 
 /***/ }),
 
@@ -1594,17 +1628,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ind
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("\nvar content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/less-loader/dist/cjs.js!./index.less */ \"./node_modules/css-loader/index.js!./node_modules/less-loader/dist/cjs.js!./src/app/cabinet/home/index.less\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/app/cabinet/home/index.less?");
-
-/***/ }),
-
-/***/ "./src/app/cabinet/home/index.template.html":
-/*!**************************************************!*\
-  !*** ./src/app/cabinet/home/index.template.html ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = \"<div class=\\\"home\\\">123</div>\"\n\n//# sourceURL=webpack:///./src/app/cabinet/home/index.template.html?");
 
 /***/ }),
 
@@ -1627,7 +1650,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hea
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<header>\\r\\n    <span>header</span>\\r\\n</header>\"\n\n//# sourceURL=webpack:///./src/app/common/header/header.template.html?");
+eval("module.exports = \"<header>\\r\\n    <span>.... Header ....</span>\\r\\n</header>\"\n\n//# sourceURL=webpack:///./src/app/common/header/header.template.html?");
 
 /***/ }),
 
@@ -1642,6 +1665,29 @@ eval("\nvar content = __webpack_require__(/*! !../../../../node_modules/css-load
 
 /***/ }),
 
+/***/ "./src/app/common/services/login.service.js":
+/*!**************************************************!*\
+  !*** ./src/app/common/services/login.service.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Login; });\nconst URL_BASE = 'https://localhost:44310';\nclass Login {\n  constructor($http) {\n    this.$http = $http;\n  }\n\n  signUp(email, password) {\n    const data = JSON.stringify({\n      email,\n      password\n    });\n    return this.$http.post(`${URL_BASE}/api/users/register`, data);\n  }\n\n}\nLogin.$name = 'login';\n\n//# sourceURL=webpack:///./src/app/common/services/login.service.js?");
+
+/***/ }),
+
+/***/ "./src/app/login/index.less":
+/*!**********************************!*\
+  !*** ./src/app/login/index.less ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/less-loader/dist/cjs.js!./index.less */ \"./node_modules/css-loader/index.js!./node_modules/less-loader/dist/cjs.js!./src/app/login/index.less\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/app/login/index.less?");
+
+/***/ }),
+
 /***/ "./src/app/login/login.component.js":
 /*!******************************************!*\
   !*** ./src/app/login/login.component.js ***!
@@ -1650,7 +1696,19 @@ eval("\nvar content = __webpack_require__(/*! !../../../../node_modules/css-load
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _login_template_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./login.template.html */ \"./src/app/login/login.template.html\");\n/* harmony import */ var _login_template_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_login_template_html__WEBPACK_IMPORTED_MODULE_0__);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  template: (_login_template_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  $name: 'ttLogin'\n});\n\n//# sourceURL=webpack:///./src/app/login/login.component.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _login_template_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./login.template.html */ \"./src/app/login/login.template.html\");\n/* harmony import */ var _login_template_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_login_template_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.less */ \"./src/app/login/index.less\");\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nclass Controller {\n  constructor($state) {\n    this.$state = $state;\n  }\n\n  $onInit() {\n    this.$state.go('app.login.signIn');\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  template: (_login_template_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  controller: Controller,\n  $name: 'ttLogin'\n});\n\n//# sourceURL=webpack:///./src/app/login/login.component.js?");
+
+/***/ }),
+
+/***/ "./src/app/login/login.router.js":
+/*!***************************************!*\
+  !*** ./src/app/login/login.router.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _signIn_signIn_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./signIn/signIn.component */ \"./src/app/login/signIn/signIn.component.js\");\n/* harmony import */ var _signUp_signUp_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./signUp/signUp.component */ \"./src/app/login/signUp/signUp.component.js\");\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function ($stateProvider) {\n  $stateProvider.state({\n    name: 'app.login.signIn',\n    component: _signIn_signIn_component__WEBPACK_IMPORTED_MODULE_0__[\"default\"].$name\n  }).state({\n    name: 'app.login.signUp',\n    component: _signUp_signUp_component__WEBPACK_IMPORTED_MODULE_1__[\"default\"].$name\n  });\n});\n\n//# sourceURL=webpack:///./src/app/login/login.router.js?");
 
 /***/ }),
 
@@ -1661,7 +1719,65 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _log
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<h1>LOGIN</h1>\"\n\n//# sourceURL=webpack:///./src/app/login/login.template.html?");
+eval("module.exports = \"<h1 class=\\\"login__title\\\">Login page</h1>\\r\\n\\r\\n<div class=\\\"login__controls\\\">\\r\\n    <a class=\\\"login__control\\\" ui-sref=\\\"app.login.signIn\\\" ui-sref-active=\\\"login__control--active\\\">Sign In</a>\\r\\n    <a class=\\\"login__control\\\" ui-sref=\\\"app.login.signUp\\\" ui-sref-active=\\\"login__control--active\\\">Sign Up</a>\\r\\n</div>\\r\\n\\r\\n<ui-view></ui-view>\"\n\n//# sourceURL=webpack:///./src/app/login/login.template.html?");
+
+/***/ }),
+
+/***/ "./src/app/login/signIn/signIn.component.js":
+/*!**************************************************!*\
+  !*** ./src/app/login/signIn/signIn.component.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _signIn_template_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./signIn.template.html */ \"./src/app/login/signIn/signIn.template.html\");\n/* harmony import */ var _signIn_template_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_signIn_template_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nclass Controller {\n  constructor(login) {\n    this.email = '';\n    this.password = '';\n    this.login = login;\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  template: (_signIn_template_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  controller: Controller,\n  $name: 'ttSignIn'\n});\n\n//# sourceURL=webpack:///./src/app/login/signIn/signIn.component.js?");
+
+/***/ }),
+
+/***/ "./src/app/login/signIn/signIn.template.html":
+/*!***************************************************!*\
+  !*** ./src/app/login/signIn/signIn.template.html ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<form class=\\\"login__form\\\">\\r\\n    <div class=\\\"login__form-row\\\">\\r\\n        <label class=\\\"login__form-label\\\" for=\\\"signIn-email\\\">Email:</label>\\r\\n        <input class=\\\"login__form-input\\\" id=\\\"signIn-email\\\" type=\\\"email\\\" ng-model=\\\"$ctrl.email\\\" required >\\r\\n    </div>\\r\\n    <div class=\\\"login__form-row\\\">\\r\\n        <label class=\\\"login__form-label\\\" for=\\\"signIn-password\\\">Password:</label>\\r\\n        <input class=\\\"login__form-input\\\" id=\\\"signIn-password\\\" type=\\\"password\\\" ng-model=\\\"$ctrl.password\\\" required >\\r\\n    </div>\\r\\n    <div class=\\\"login__form-row\\\">\\r\\n        <button class=\\\"login__form-submit\\\" type=\\\"submit\\\">Submit</button>\\r\\n    </div>\\r\\n</form>\"\n\n//# sourceURL=webpack:///./src/app/login/signIn/signIn.template.html?");
+
+/***/ }),
+
+/***/ "./src/app/login/signUp/checkPassword.directive.js":
+/*!*********************************************************!*\
+  !*** ./src/app/login/signUp/checkPassword.directive.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return checkPasswordEquality; });\ncheckPasswordEquality.$name = 'checkPasswordEquality';\nfunction checkPasswordEquality() {\n  return {\n    require: 'ngModel',\n    link: function (scope, element, attr, mCtrl) {\n      function passwordValidation(value) {\n        const password1 = scope.$ctrl.password1;\n\n        if (password1 !== value) {\n          mCtrl.$setValidity('passwordEquality', false);\n        } else {\n          mCtrl.$setValidity('passwordEquality', true);\n        }\n\n        return value;\n      }\n\n      mCtrl.$parsers.push(passwordValidation);\n    }\n  };\n}\n\n//# sourceURL=webpack:///./src/app/login/signUp/checkPassword.directive.js?");
+
+/***/ }),
+
+/***/ "./src/app/login/signUp/signUp.component.js":
+/*!**************************************************!*\
+  !*** ./src/app/login/signUp/signUp.component.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _signUp_template_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./signUp.template.html */ \"./src/app/login/signUp/signUp.template.html\");\n/* harmony import */ var _signUp_template_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_signUp_template_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nclass Controller {\n  constructor(login) {\n    this.email = '';\n    this.password1 = '';\n    this.password2 = '';\n    this.login = login;\n  }\n\n  onSubmit() {\n    this.login.signUp(this.email, this.password1);\n  }\n\n  $onInit() {\n    console.log(this.signUpForm);\n  }\n\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  template: (_signUp_template_html__WEBPACK_IMPORTED_MODULE_0___default()),\n  controller: Controller,\n  $name: 'ttSignUp'\n});\n\n//# sourceURL=webpack:///./src/app/login/signUp/signUp.component.js?");
+
+/***/ }),
+
+/***/ "./src/app/login/signUp/signUp.template.html":
+/*!***************************************************!*\
+  !*** ./src/app/login/signUp/signUp.template.html ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<form class=\\\"login__form\\\" name=\\\"signUpForm\\\">\\r\\n    <div class=\\\"login__form-row\\\">\\r\\n        <label class=\\\"login__form-label\\\" for=\\\"signUp-email\\\">Email:</label>\\r\\n        <input class=\\\"login__form-input\\\" id=\\\"signUp-email\\\" type=\\\"email\\\" ng-model=\\\"$ctrl.email\\\" required name=\\\"email\\\">\\r\\n    </div>\\r\\n    <div class=\\\"login__form-row\\\">\\r\\n        <label class=\\\"login__form-label\\\" for=\\\"signUp-password1\\\">Password:</label>\\r\\n        <input class=\\\"login__form-input\\\" id=\\\"signUp-password1\\\" type=\\\"password\\\" ng-model=\\\"$ctrl.password1\\\" required name=\\\"password1\\\">\\r\\n    </div>\\r\\n    <div class=\\\"login__form-row\\\">\\r\\n        <label class=\\\"login__form-label\\\" for=\\\"signUp-password2\\\">Confirm password:</label>\\r\\n        <input class=\\\"login__form-input\\\" id=\\\"signUp-password2\\\" type=\\\"password\\\" ng-model=\\\"$ctrl.password2\\\" required check-password-equality name=\\\"password2\\\">\\r\\n    </div>\\r\\n    <div class=\\\"login__form-row\\\">\\r\\n        <button ng-click=\\\"$ctrl.onSubmit()\\\" class=\\\"login__form-submit\\\" type=\\\"submit\\\">Submit</button>\\r\\n    </div>\\r\\n</form>     \"\n\n//# sourceURL=webpack:///./src/app/login/signUp/signUp.template.html?");
 
 /***/ }),
 

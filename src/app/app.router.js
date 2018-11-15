@@ -1,13 +1,14 @@
-import homeComponent from './cabinet/home/home.component';
+import loginComponent from "./login/login.component";
 
-export default function($stateProvider) {
+export default function($stateProvider, $urlRouterProvider) {
     $stateProvider
-        .state('home', {
-            url: '/',
-            views: {
-                cabinet: {
-                    component: homeComponent.$name
-                }
-            }
+        .state({
+            name: 'app'
         })
+        .state({
+            name: 'app.login',
+            url: '/login',
+            component: loginComponent.$name
+        });
+    $urlRouterProvider.otherwise('/');
 }
