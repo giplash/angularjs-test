@@ -1,0 +1,17 @@
+<form class="auth__form" name="signUpForm">
+    <div class="auth__form-row">
+        <label class="auth__form-label" for="signUp-email">Email:</label>
+        <input class="auth__form-input" id="signUp-email" type="email" ng-model="$ctrl.email" required name="email">
+    </div>
+    <div class="auth__form-row">
+        <label class="auth__form-label" for="signUp-password1">Password:</label>
+        <input class="auth__form-input" id="signUp-password1" type="password" ng-model="$ctrl.password1" required name="password1">
+    </div>
+    <div class="auth__form-row">
+        <label class="auth__form-label" for="signUp-password2">Confirm password:</label>
+        <input class="auth__form-input" id="signUp-password2" type="password" ng-model="$ctrl.password2" required check-password-equality name="password2">
+    </div>
+    <div class="auth__form-row">
+        <button ng-click="$ctrl.onSubmit()" class="auth__form-submit" type="submit">Submit</button>
+    </div>
+</form>     
