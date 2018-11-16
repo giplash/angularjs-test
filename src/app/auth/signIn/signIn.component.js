@@ -7,6 +7,11 @@ class Controller {
         this.auth = auth;
     }
 
+    handleSubmit() {
+        this.auth.signIn(this.email, this.password)
+            .then(console.log)
+    }
+
 }
 
 export default {

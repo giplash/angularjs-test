@@ -12,6 +12,7 @@ import homeComponent from './cabinet/home/home.component';
 import headerComponent from './common/header/header.component';
 import signInComponent from './auth/signIn/signIn.component';
 import signUpComponent from './auth/signUp/signUp.component';
+import boardListComponent from './cabinet/boardList/boardList.component';
 
 // routers
 import appRouter from './app.router.js'
@@ -51,3 +52,4 @@ angular.module('app', [
     .component(headerComponent.$name, headerComponent)
     .component(signUpComponent.$name, signUpComponent)
     .component(signInComponent.$name, signInComponent)
+    .component(boardListComponent.$name, boardListComponent)
