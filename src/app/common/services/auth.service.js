@@ -1,6 +1,6 @@
 const URL_BASE = 'https://localhost:44310';
 
-export default class Login {
+export default class Auth {
     constructor($http) {
         this.$http = $http;
     }
@@ -16,4 +16,4 @@ export default class Login {
     }
 }
 
-Login.$name = 'login';
+Auth.$name = 'auth';

@@ -1,4 +1,4 @@
-import loginComponent from "./login/login.component";
+import authComponent from "./auth/auth.component";
 
 export default function($stateProvider, $urlRouterProvider) {
     $stateProvider
@@ -6,9 +6,9 @@ export default function($stateProvider, $urlRouterProvider) {
             name: 'app'
         })
         .state({
-            name: 'app.login',
-            url: '/login',
-            component: loginComponent.$name
+            name: 'app.auth',
+            url: '/auth',
+            component: authComponent.$name
         });
     $urlRouterProvider.otherwise('/');
 }

@@ -1,3 +1,8 @@
-<h1>Home page</h1>
-<a ui-sref="app.login">login</a>
+<tt-draggable-element data="{name: 'Viktor'}">
+    <h1>Home page</h1>
+</tt-draggable-element>
+
+<tt-drop-container callback="$ctrl.callback(data)">
+    <div class="drop-container"></div>
+</tt-drop-container>
 <tt-board-list></tt-board-list>

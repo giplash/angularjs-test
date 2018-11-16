@@ -1,43 +1,51 @@
 import angular from 'angular';
 
-import '@uirouter/angularjs';
+// modules
+import uiRouter from '@uirouter/angularjs';
+import dragAndDrop from './common/dragAndDrop';
 
-import './style/main.less';
-
+// components
 import appComponent from './app.component';
 import cabinetComponent from './cabinet/cabinet.component';
-import loginComponent from './login/login.component';
+import authComponent from './auth/auth.component';
 import homeComponent from './cabinet/home/home.component';
 import headerComponent from './common/header/header.component';
-import signInComponent from './login/signIn/signIn.component';
-import signUpComponent from './login/signUp/signUp.component';
+import signInComponent from './auth/signIn/signIn.component';
+import signUpComponent from './auth/signUp/signUp.component';
 
+// routers
 import appRouter from './app.router.js'
 import cabinetRouter from './cabinet/cabinet.router';
-import loginRouter from './login/login.router';
+import authRouter from './auth/auth.router';
 
-import loginService from './common/services/login.service';
+// services
+import authService from './common/services/auth.service';
 
-import checkPasswordDirective from './login/signUp/checkPassword.directive';
+// directive
+import checkPasswordDirective from './auth/signUp/checkPassword.directive';
 
-const MODULE_NAME = 'app';
-export default MODULE_NAME;
-
+// style
 import './style/main.less';
 
 
-angular.module(MODULE_NAME, ['ui.router'])
+angular.module('app', [
+        uiRouter,
+        dragAndDrop
+    ])
 
     .config(appRouter)
     .config(cabinetRouter)
-    .config(loginRouter)
+    .config(authRouter)
+    // .config(function($locationProvider) {
+    //     $locationProvider.html5Mode(true);
+    // })
 
-    .service(loginService.$name, loginService)
+    .service(authService.$name, authService)
 
     .directive(checkPasswordDirective.$name, checkPasswordDirective)
 
     .component(appComponent.$name, appComponent)
-    .component(loginComponent.$name, loginComponent)
+    .component(authComponent.$name, authComponent)
     .component(cabinetComponent.$name, cabinetComponent)
     .component(homeComponent.$name, homeComponent)
     .component(headerComponent.$name, headerComponent)

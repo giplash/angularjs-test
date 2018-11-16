@@ -5,13 +5,14 @@ class Controller {
         this.email = '';
         this.password1 = '';
         this.password2 = '';
-        this.login = auth;
+        this.auth = auth;
     }
 
     onSubmit() {
-        this.auth.signUp(this.email, this.password1);
+        this.auth.signUp(this.email, this.password1)
+            .then(console.log)
     }
-    
+
 }
 
 export default {
