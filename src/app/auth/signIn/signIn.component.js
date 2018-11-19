@@ -1,14 +1,14 @@
 import template from './signIn.template.html';
 
 class Controller {
-    constructor(auth) {
+    constructor(users) {
         this.email = '';
         this.password = '';
-        this.auth = auth;
+        this.users = users;
     }
 
     handleSubmit() {
-        this.auth.signIn(this.email, this.password)
+        this.users.signIn(this.email, this.password)
             .then(console.log)
     }
 

@@ -1,15 +1,15 @@
 import template from './signUp.template.html';
 
 class Controller {
-    constructor(auth) {
+    constructor(users) {
         this.email = '';
         this.password1 = '';
         this.password2 = '';
-        this.auth = auth;
+        this.users = users;
     }
 
     onSubmit() {
-        this.auth.signUp(this.email, this.password1)
+        this.users.signUp(this.email, this.password1)
             .then(console.log)
     }
 

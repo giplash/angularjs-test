@@ -2,12 +2,12 @@ import template from './header.template.html';
 import './index.less';
 
 class Controller {
-    constructor(auth) {
-        this.auth = auth;
+    constructor(users) {
+        this.users = users;
     }
 
     handleLogout() {
-        this.auth.logout()
+        this.users.logout()
             .then(console.log)
     }
 }

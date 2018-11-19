@@ -1,0 +1,21 @@
+<div class="board-details">
+    <div ng-if="$ctrl.isLoading === true">
+        <p class="board-details__message">Loading...</p>
+    </div>
+    
+    <div ng-if="$ctrl.isLoading === false">
+        <h3 class="board-details__header"><span>Board:</span> {{ $ctrl.title }}</h3>
+        <div class="board-details__columns">
+            <div ng-repeat="item in $ctrl.lists" tt-drop-container tt-callback="$ctrl.handleDrop(data, dropData)" tt-drop-data="{id: item.id}" class="board-details__column">
+                <h5 class="board-details__column-title">{{ item.title }}</h5>
+                <div ng-repeat="todo in item.todo" tt-draggable-element tt-data="todo" class="board-details__column-item" ng-class="{'board-details__column-item--done': todo.done}">
+
+                    <input ng-model="todo.title" class="board-details__input" type="text">
+                    <button ng-if="todo.done === true" class="button board-details__todo-button board-details__todo-button--cancel">Cancel</button>
+                    <button ng-if="todo.done === false" class="button board-details__todo-button board-details__todo-button--done">Done</button>
+                </div>
+            </div>
+            <button class="button board-details__add-button">Add list</button>
+        </div>
+    </div>
+</div>  

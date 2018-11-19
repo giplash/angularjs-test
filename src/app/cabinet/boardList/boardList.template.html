@@ -1,6 +1,19 @@
 <div class="board-list">
-    <h3>Board list</h3>
-    <div class="board-list__controls">
-        <button>Add</button>
+    <h3 class="board-list__header">Board list</h3>
+    <div ng-if="$ctrl.isLoading === false" class="board-list__controls">
+        <form class="board-list__add-form">
+            <input ng-model="$ctrl.newBoardTitle" class="board-list__input" type="text" placeholder="New board title">
+            <button class="button board-list__button board-list__button--add">Add board</button>
+        </form>
+    </div>
+
+    <p ng-if="$ctrl.isLoading" class="board-list__message">Loading...</p>
+    <p ng-if="$ctrl.boards.length === 0 && $ctrl.isLoading === false" class="board-list__message">You have no boards</p>
+
+    <div ng-if="$ctrl.boards.length > 0 && $ctrl.isLoading === false" class="board-list__container">
+        <div ng-repeat="item in $ctrl.boards" class="board-list__item" ng-click="$ctrl.handleItemClick(item.id)">
+            <h4 class="board-list__item-title">{{ item.title }}</h4>
+            <span class="icon board-list__remove-icon"></span>
+        </div>
     </div>
 </div>
