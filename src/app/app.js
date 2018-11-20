@@ -1,7 +1,10 @@
 import angular from 'angular';
+
 // modules
 import uiRouter from '@uirouter/angularjs';
 import dragAndDrop from './common/dragAndDrop';
+import ngMessages from 'angular-messages';
+import ngCookies from 'angular-cookies';
 
 // components
 import appComponent from './app.component';
@@ -25,6 +28,7 @@ import todoService from './common/services/todo.service';
 
 // directive
 import checkPasswordDirective from './auth/signUp/checkPassword.directive';
+import compareToDirective from './common/compareTo/compareTo.directive';
 
 // factory
 import authChekerFactory from './common/factories/authChecker.factory';
@@ -32,11 +36,14 @@ import authChekerFactory from './common/factories/authChecker.factory';
 // style
 import './style/main.less';
 
-
 angular.module('app', [
         uiRouter,
-        dragAndDrop
+        dragAndDrop,
+        ngMessages,
+        ngCookies
     ])
+
+    
 
     .factory(authChekerFactory.$name, authChekerFactory)
 
@@ -46,14 +53,15 @@ angular.module('app', [
     .config(function($httpProvider) {
         $httpProvider.interceptors.push(authChekerFactory.$name)
     })
-    // .config(function($locationProvider) {
-    //     $locationProvider.html5Mode(true);
-    // })
+    .config(function($locationProvider) {
+        $locationProvider.html5Mode(true);
+    })
 
     .service(usersService.$name, usersService)
     .service(todoService.$name, todoService)
 
     .directive(checkPasswordDirective.$name, checkPasswordDirective)
+    .directive(compareToDirective.$name, compareToDirective)
 
     .component(appComponent.$name, appComponent)
     .component(authComponent.$name, authComponent)

@@ -21,7 +21,9 @@
   "homepage": "https://github.com/giplash/angularjs-project-structure#readme",
   "dependencies": {
     "@uirouter/angularjs": "^1.0.20",
-    "angular": "^1.7.5"
+    "angular": "^1.7.5",
+    "angular-cookies": "^1.7.5",
+    "angular-messages": "1.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.1.5",

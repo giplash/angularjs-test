@@ -1,17 +1,17 @@
-<form class="auth__form" name="signUpForm">
+<form class="auth__form" name="$ctrl.form">
     <div class="auth__form-row">
         <label class="auth__form-label" for="signUp-email">Email:</label>
-        <input class="auth__form-input" id="signUp-email" type="email" ng-model="$ctrl.email" required name="email">
+        <input class="auth__form-input" id="signUp-email" type="email" ng-model="$ctrl.email" required name="$ctrl.email">
     </div>
     <div class="auth__form-row">
         <label class="auth__form-label" for="signUp-password1">Password:</label>
-        <input class="auth__form-input" id="signUp-password1" type="password" ng-model="$ctrl.password1" required name="password1">
+        <input class="auth__form-input" id="signUp-password1" type="password" ng-model="$ctrl.password1" required  name="$ctrl.pass1">
     </div>
     <div class="auth__form-row">
         <label class="auth__form-label" for="signUp-password2">Confirm password:</label>
-        <input class="auth__form-input" id="signUp-password2" type="password" ng-model="$ctrl.password2" required check-password-equality name="password2">
+        <input class="auth__form-input" id="signUp-password2" type="password" ng-model="$ctrl.password2" required check-password-equality name="$ctrl.pass1" tt-compare-to="$ctrl.password1">
     </div>
     <div class="auth__form-row">
-        <button ng-click="$ctrl.onSubmit()" class="auth__form-submit" type="submit">Submit</button>
+        <button ng-click="$ctrl.onSubmit()" class="auth__form-submit" type="submit" ng-disabled="$ctrl.isLoading === true">Submit</button>
     </div>
 </form>     

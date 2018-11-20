@@ -2,13 +2,17 @@ import template from './header.template.html';
 import './index.less';
 
 class Controller {
-    constructor(users) {
+    constructor(users, $state) {
         this.users = users;
+        this.$state = $state;
     }
 
     handleLogout() {
         this.users.logout()
-            .then(console.log)
+    }
+
+    goHome() {
+        this.$state.go('app.cabinet.boards');
     }
 }
 

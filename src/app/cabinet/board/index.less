@@ -40,6 +40,7 @@
         width: 240px;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
 
         &--done {            
             border: 2px solid rgb(41, 121, 41);
@@ -67,6 +68,7 @@
         margin-bottom: 3px;
         border: 2px solid #8c8c8c;
         outline: none;
+        margin-top: 18px;
     }
 
     .button&__todo-button {
@@ -81,5 +83,53 @@
         &--done {
             background: #285428;
         }
+    }
+
+    &__add-column-container {
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__add-column-input {
+        font-size: 16px;
+        margin-bottom: 3px;
+        padding: 5px 3px;
+    }
+
+    &__remove-list-icon {
+        cursor: pointer;
+        position: absolute;
+    }
+
+    &__remove-column-item-icon {
+        cursor: pointer;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+    }
+
+    &__add-list-item {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin: 0 auto;
+
+        form {
+            width: 100%;
+        }
+    }
+
+    &__add-list-item-input {
+        margin-bottom: 3px;
+        padding: 5px 3px;
+        width: 100%;
+        font-size: 16px;
+        border: 2px solid #8c8c8c;
+    }
+
+    &__add-list-item-button {
+        width: 100%;
     }
 }

@@ -2,8 +2,16 @@
     <h3 class="board-list__header">Board list</h3>
     <div ng-if="$ctrl.isLoading === false" class="board-list__controls">
         <form class="board-list__add-form">
-            <input ng-model="$ctrl.newBoardTitle" class="board-list__input" type="text" placeholder="New board title">
-            <button class="button board-list__button board-list__button--add">Add board</button>
+            <input 
+                ng-model="$ctrl.newBoardTitle" 
+                class="board-list__input" type="text" 
+                placeholder="New board title"
+            />
+            <button 
+                class="button board-list__button board-list__button--add"
+                type="submit"
+                ng-click="$ctrl.addBoard();"                
+            >Add board</button>
         </form>
     </div>
 
@@ -13,7 +21,10 @@
     <div ng-if="$ctrl.boards.length > 0 && $ctrl.isLoading === false" class="board-list__container">
         <div ng-repeat="item in $ctrl.boards" class="board-list__item" ng-click="$ctrl.handleItemClick(item.id)">
             <h4 class="board-list__item-title">{{ item.title }}</h4>
-            <span class="icon board-list__remove-icon"></span>
+            <span 
+                class="icon icon--remove board-list__remove-icon"
+                ng-click="$ctrl.removeBoard(item.id)"
+            ></span>
         </div>
     </div>
 </div>

@@ -85,6 +85,18 @@ export default class Todo {
         // )
     }
 
+
+
+
+    addBoard(id, title, userId) {
+        return (
+            this.$http.post(`${URL_BASE}/api/todo/board`,{
+                id,
+                title,
+                userId
+            })
+        )
+    }
     
 
 }

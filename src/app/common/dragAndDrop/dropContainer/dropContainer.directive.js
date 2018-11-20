@@ -21,6 +21,7 @@ export default function dropContainer() {
                     data,
                     dropData: scope.ttDropData
                 });
+                scope.$apply();
             });
         }
     }

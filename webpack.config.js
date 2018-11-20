@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WriteFilePlugin = require('write-file-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/app/app.js',
@@ -52,12 +53,17 @@ module.exports = {
       to: path.join(__dirname, 'dist'),
       force: true,
     }]),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'src/public/index.html'
+    })
   ],
 
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 8080,
+    historyApiFallback: true
   }
   
 }

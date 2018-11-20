@@ -299,6 +299,16 @@ ajv@^6.1.0, ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+angular-cookies@^1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/angular-cookies/-/angular-cookies-1.7.5.tgz#1c5ab3c05cdc43f1777be9506e64587cb3543634"
+  integrity sha512-/8xvvSl/Z9Vwu8ChRm+OQE3vmli8Icwl8uTYkHqD7j7cknJP9kNaf7SgsENlsLVtOqLE/I7TCFYrSx3bmSeNQA==
+
+angular-messages@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/angular-messages/-/angular-messages-1.6.0.tgz#f251f6dc80965946fa74352609e007488308c0f4"
+  integrity sha1-8lH23ICWWUb6dDUmCeAHSIMIwPQ=
+
 angular@^1.7.5:
   version "1.7.5"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.7.5.tgz#d1c1c01c6f5dc835638f3f9aa51012857bdac49e"
@@ -2210,7 +2220,8 @@ html-minifier@^3.2.3:
 
 html-webpack-plugin@^3.2.0:
   version "3.2.0"
-  resolved "http://registry.npmjs.org/html-webpack-plugin/-/html-webpack-plugin-3.2.0.tgz#b01abbd723acaaa7b37b6af4492ebda03d9dd37b"
+  resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-3.2.0.tgz#b01abbd723acaaa7b37b6af4492ebda03d9dd37b"
+  integrity sha1-sBq71yOsqqeze2r0SS69oD2d03s=
   dependencies:
     html-minifier "^3.2.3"
     loader-utils "^0.2.16"

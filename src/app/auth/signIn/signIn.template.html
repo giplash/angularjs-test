@@ -1,13 +1,13 @@
-<form class="auth__form">
+<form class="auth__form" name="$ctrl.form">
     <div class="auth__form-row">
         <label class="auth__form-label" for="signIn-email">Email:</label>
-        <input class="auth__form-input" id="signIn-email" type="email" ng-model="$ctrl.email" required >
+        <input class="auth__form-input" id="signIn-email" type="email" ng-model="$ctrl.email" required name="$ctrl.emailInput">
     </div>
     <div class="auth__form-row">
         <label class="auth__form-label" for="signIn-password">Password:</label>
-        <input class="auth__form-input" id="signIn-password" type="password" ng-model="$ctrl.password" required >
+        <input class="auth__form-input" id="signIn-password" type="password" ng-model="$ctrl.password" required name="$ctrl.passInput">
     </div>
     <div class="auth__form-row">
-        <button class="auth__form-submit" type="submit" ng-click="$ctrl.handleSubmit()">Submit</button>
+        <button class="auth__form-submit" type="submit" ng-click="$ctrl.handleSubmit()" ng-disabled="$ctrl.isLoading === true">Submit</button>
     </div>
 </form>

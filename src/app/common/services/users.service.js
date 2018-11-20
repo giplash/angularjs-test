@@ -1,9 +1,11 @@
 import URL from './url';
 
 export default class Users {
-    constructor($http, $q) {
+    constructor($http, $q, $cookies, $state) {
         this.$http = $http;
         this.$q = $q;
+        this.$cookies = $cookies;
+        this.$state = $state;
     }
 
     signUp(email, password) {
@@ -32,10 +34,8 @@ export default class Users {
     }
 
     logout() {
-        return (
-            this.$http
-                .post(`${URL}/api/users/logout`)
-        )
+        this.$cookies.remove('Auth_Cookie');
+        this.$state.go('app.auth');
     }
 
     getBoards() {
@@ -65,10 +65,10 @@ export default class Users {
                 ]);
             }, 700);
         })
-        // return (
-        //     this.$http
-        //         .get(`${URL}/api/users/boards`)
-        // )
+        return (
+            this.$http
+                .get(`${URL}/api/users/boards`)
+        )
     }
 }
 
