@@ -52,6 +52,7 @@ class Controller {
         oldList.todo = oldList.todo.filter(item => item.id !== id);
         item.listId = newListId;
         newList.todo.push(item);
+        this.todo.updateTask(id, newListId, item.title, item.done);
     }
 
     toggleStatus(id, listId) {
@@ -59,17 +60,29 @@ class Controller {
                          .find(item => item.id === listId)
                          .todo
                          .find(item => item.id === id);
-        item.done = !item.done;
+        const newStatus = !item.done;
+        item.done = newStatus;
+        this.todo.updateTask(id, listId, item.title, newStatus);
+    }
+
+    updateTaskTitle(id, listId) {
+        const item = this.lists
+                         .find(item => item.id === listId)
+                         .todo
+                         .find(item => item.id === id);
+        this.todo.updateTask(id, listId, item.title, item.done);
     }
 
     removeList(listId) {
         this.lists = this.lists.filter(item => item.id !== listId);
         delete this.newTasks[listId];
+        this.todo.removeList(listId);
     }
 
     removeListItem(id, listId) {        
         const list = this.lists.find(item => item.id === listId);
-        list.todo = list.todo.filter(item => item.id !== id);        
+        list.todo = list.todo.filter(item => item.id !== id);
+        this.todo.removeTask(id);
     }
 
     _generateTaskId(listId) {
@@ -92,23 +105,29 @@ class Controller {
         const title = this.newTasks[listId].value;
         if (title.length === 0) return;
         const list = this.lists.find(item => item.id === listId);
-        list.todo.push({
+        const obj = {
             listId,
             title,
             id: this._generateTaskId(listId),
             done: false
-        })
+        };
+        list.todo.push(obj);
+        this.todo.addTask(listId, title)
+                 .then(id => obj.id = id);
         this.newTasks[listId].value = '';
     }
 
     addList() {
         if (this.newListTitle.length === 0) return;
-        this.lists.push({
+        const obj = {
             id: this._generateListId(),
             title: this.newListTitle,
             todo: [],
             boardId: this.id
-        })
+        };        
+        this.lists.push(obj);
+        this.todo.addList(this.id, this.newListTitle)
+                 .then(id => obj.id = id);
         this.newListTitle = '';
     }
 

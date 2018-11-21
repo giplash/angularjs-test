@@ -2,8 +2,9 @@ import template from './boardList.template.html';
 import './index.less';
 
 class Controller {
-    constructor(users, $state) {
+    constructor(users, todo, $state) {
         this.users = users;
+        this.todo = todo;
         this.$state = $state;
         this.newBoardTitle = '';
         this.boards = [];
@@ -15,7 +16,6 @@ class Controller {
         this.users.getBoards().then(res => {
             this.isLoading = false;
             this.boards = res;
-            console.log(this.boards);
         });
         
     }
@@ -33,17 +33,21 @@ class Controller {
     }
 
     addBoard() {
-        const { userId } = this.boards[0];
-        this.boards.push({
-            userId,
-            title: this.newBoardTitle,
-            id: this._generateBoardId()
-        })
+        const obj = {
+            id: this._generateBoardId(),
+            title: this.newBoardTitle
+        }
+        this.boards.push(obj)
         this.newBoardTitle = '';
+        this.todo.addBoard(obj.title)
+                 .then(id => {
+                     obj.id = id;
+                 });
     }
 
     removeBoard(id) {
         this.boards = this.boards.filter(item => item.id !== id);
+        this.todo.removeBoard(id);
     }
 }
 

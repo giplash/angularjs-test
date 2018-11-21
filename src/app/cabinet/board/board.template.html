@@ -29,7 +29,11 @@
                         class="icon icon--remove board-details__remove-column-item-icon"
                         ng-click="$ctrl.removeListItem(todo.id, todo.listId)"
                     ></span>
-                    <input ng-model="todo.title" class="board-details__input" type="text">
+                    <input 
+                        ng-model="todo.title" 
+                        class="board-details__input" type="text"
+                        ng-blur="$ctrl.updateTaskTitle(todo.id, todo.listId)"
+                    >
                     <button 
                         ng-if="todo.done === true" 
                         ng-click="$ctrl.toggleStatus(todo.id, todo.listId)" 

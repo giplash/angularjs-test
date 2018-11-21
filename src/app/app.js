@@ -16,6 +16,7 @@ import signInComponent from './auth/signIn/signIn.component';
 import signUpComponent from './auth/signUp/signUp.component';
 import boardListComponent from './cabinet/boardList/boardList.component';
 import boardComponent from './cabinet/board/board.component';
+import columnComponent from './cabinet/column/column.component';
 
 // routers
 import appRouter from './app.router.js'
@@ -72,3 +73,4 @@ angular.module('app', [
     .component(signInComponent.$name, signInComponent)
     .component(boardListComponent.$name, boardListComponent)
     .component(boardComponent.$name, boardComponent)
+    .component(columnComponent.$name, columnComponent)

@@ -39,35 +39,38 @@ export default class Users {
     }
 
     getBoards() {
-        return this.$q((resolve, reject) => {
-            setTimeout(() => {
-                resolve([
-                    {
-                        id: 1,
-                        userId: 1,
-                        title: 'Board 1'
-                    },
-                    {
-                        id: 2,
-                        userId: 1,
-                        title: 'Board 2'
-                    },
-                    {
-                        id: 3,
-                        userId: 1,
-                        title: 'Board 3'
-                    },
-                    {
-                        id: 4,
-                        userId: 1,
-                        title: 'Board 5'
-                    }
-                ]);
-            }, 700);
-        })
+        // return this.$q((resolve, reject) => {
+        //     setTimeout(() => {
+        //         resolve([
+        //             {
+        //                 id: 1,
+        //                 userId: 1,
+        //                 title: 'Board 1'
+        //             },
+        //             {
+        //                 id: 2,
+        //                 userId: 1,
+        //                 title: 'Board 2'
+        //             },
+        //             {
+        //                 id: 3,
+        //                 userId: 1,
+        //                 title: 'Board 3'
+        //             },
+        //             {
+        //                 id: 4,
+        //                 userId: 1,
+        //                 title: 'Board 5'
+        //             }
+        //         ]);
+        //     }, 700);
+        // })
         return (
             this.$http
-                .get(`${URL}/api/users/boards`)
+                .get(`${URL}/api/users/boards`, {
+                    withCredentials: true
+                })
+                .then(res => res.data)
         )
     }
 }
