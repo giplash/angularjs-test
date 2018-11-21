@@ -7,6 +7,22 @@ export default class Todo {
         this.$q = $q;
     }
 
+    generateListId(lists) {
+        let id = 0;
+        do {
+            id++;
+        } while (lists.some(item => item.id === id));
+        return id;
+    }
+
+    generateTaskId(lists) {
+        let id = 0;
+        do {
+            id++;
+        } while (lists.some(item => item.todo.some(item => item.id === id)));
+        return id;
+    }
+
     getBoardTitle(boardId) {
         return (
             this.$http

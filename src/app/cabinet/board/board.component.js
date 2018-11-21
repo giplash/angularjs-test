@@ -85,22 +85,6 @@ class Controller {
         this.todo.removeTask(id);
     }
 
-    _generateTaskId(listId) {
-        let id = 0;
-        do {
-            id++;
-        } while (this.lists.some(item => item.todo.some(item => item.id === id)));
-        return id;
-    }
-
-    _generateListId(listId) {
-        let id = 0;
-        do {
-            id++;
-        } while (this.lists.some(item => item.id === id));
-        return id;
-    }
-
     addTask(listId) {
         const title = this.newTasks[listId].value;
         if (title.length === 0) return;
@@ -108,7 +92,7 @@ class Controller {
         const obj = {
             listId,
             title,
-            id: this._generateTaskId(listId),
+            id: this.todo.generateTaskId(this.lists),
             done: false
         };
         list.todo.push(obj);
@@ -120,7 +104,7 @@ class Controller {
     addList() {
         if (this.newListTitle.length === 0) return;
         const obj = {
-            id: this._generateListId(),
+            id: this.todo.generateListId(this.lists),
             title: this.newListTitle,
             todo: [],
             boardId: this.id
