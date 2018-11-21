@@ -1,0 +1,26 @@
+<div    
+    class="board-details__column-item" 
+    ng-class="{'board-details__column-item--done': $ctrl.todo.done}"
+    tt-draggable-element 
+    tt-data="$ctrl.todo"
+>
+    <span 
+        class="icon icon--remove board-details__remove-column-item-icon"
+        ng-click="$ctrl.removeListItem({id: $ctrl.todo.id, listId: $ctrl.todo.listId})"
+    ></span>
+    <input 
+        ng-model="$ctrl.todo.title" 
+        class="board-details__input" type="text"
+            ng-blur="$ctrl.updateTaskTitle({id: $ctrl.todo.id, listId: $ctrl.todo.listId})"
+    >
+    <button 
+        ng-if="$ctrl.todo.done === true" 
+        ng-click="$ctrl.toggleStatus({id: $ctrl.todo.id, listId: $ctrl.todo.listId})" 
+        class="button board-details__todo-button board-details__todo-button--cancel"
+    >Cancel</button>
+    <button 
+        ng-if="$ctrl.todo.done === false" 
+        ng-click="$ctrl.toggleStatus({id: $ctrl.todo.id, listId: $ctrl.todo.listId})" 
+        class="button board-details__todo-button board-details__todo-button--done"
+    >Done</button>
+</div>

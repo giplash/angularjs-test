@@ -9,33 +9,14 @@
         ng-click="$ctrl.removeList({listId: $ctrl.list.id})"
     ></span>
     <h5 class="board-details__column-title">{{ $ctrl.list.title }}</h5>
-    <div 
+    <tt-task 
         ng-repeat="todo in $ctrl.list.todo" 
-        tt-draggable-element 
-        tt-data="todo" 
-        class="board-details__column-item" 
-        ng-class="{'board-details__column-item--done': todo.done}"
-    >
-        <span 
-            class="icon icon--remove board-details__remove-column-item-icon"
-            ng-click="$ctrl.removeListItem({id: todo.id, listId: todo.listId})"
-        ></span>
-        <input 
-            ng-model="todo.title" 
-            class="board-details__input" type="text"
-                ng-blur="$ctrl.updateTaskTitle({id: todo.id, listId: todo.listId})"
-        >
-        <button 
-            ng-if="todo.done === true" 
-            ng-click="$ctrl.toggleStatus({id: todo.id, listId: todo.listId})" 
-            class="button board-details__todo-button board-details__todo-button--cancel"
-        >Cancel</button>
-        <button 
-            ng-if="todo.done === false" 
-            ng-click="$ctrl.toggleStatus({id: todo.id, listId: todo.listId})" 
-            class="button board-details__todo-button board-details__todo-button--done"
-        >Done</button>
-    </div>
+        todo="todo"
+        toggle-status="$ctrl.toggleStatus({id: id, listId: listId})"
+        update-task-title="$ctrl.updateTaskTitle({id: id, listId: listId})"
+        remove-list-item="$ctrl.removeListItem({id: id, listId: listId})"
+    >        
+    </tt-task>
     <div class="board-details__add-list-item">
         <form>
             <input 
