@@ -10,7 +10,6 @@ class Controller {
         this.id = $stateParams.id;
         this.title = null;
         this.lists = [];
-        this.newTasks = {};
         this.newListTitle = '';
         this.isLoading = false;
     }
@@ -25,13 +24,6 @@ class Controller {
                         this.isLoading = false;
                     }
                     this.lists = res;
-                    this.lists.forEach(item => {
-                        this.newTasks[item.id] = {
-                            id: item.id,
-                            value: ''
-                        };
-                    })
-
                  });
         this.todo.getBoardTitle(this.id)
                  .then(res => {
@@ -75,7 +67,6 @@ class Controller {
 
     removeList(listId) {
         this.lists = this.lists.filter(item => item.id !== listId);
-        delete this.newTasks[listId];
         this.todo.removeList(listId);
     }
 
@@ -85,8 +76,7 @@ class Controller {
         this.todo.removeTask(id);
     }
 
-    addTask(listId) {
-        const title = this.newTasks[listId].value;
+    addTask(listId, title) {
         if (title.length === 0) return;
         const list = this.lists.find(item => item.id === listId);
         const obj = {
@@ -98,7 +88,6 @@ class Controller {
         list.todo.push(obj);
         this.todo.addTask(listId, title)
                  .then(id => obj.id = id);
-        this.newTasks[listId].value = '';
     }
 
     addList() {

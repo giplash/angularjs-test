@@ -1,0 +1,54 @@
+<div
+    class="board-details__column"
+    tt-drop-container 
+    tt-drop-data="{id: $ctrl.list.id}"
+    tt-callback="$ctrl.handleDrop({data: data, dropData: dropData})"
+    >
+    <span 
+        class="icon icon--remove board-details__remove-list-icon"
+        ng-click="$ctrl.removeList({listId: $ctrl.list.id})"
+    ></span>
+    <h5 class="board-details__column-title">{{ $ctrl.list.title }}</h5>
+    <div 
+        ng-repeat="todo in $ctrl.list.todo" 
+        tt-draggable-element 
+        tt-data="todo" 
+        class="board-details__column-item" 
+        ng-class="{'board-details__column-item--done': todo.done}"
+    >
+        <span 
+            class="icon icon--remove board-details__remove-column-item-icon"
+            ng-click="$ctrl.removeListItem({id: todo.id, listId: todo.listId})"
+        ></span>
+        <input 
+            ng-model="todo.title" 
+            class="board-details__input" type="text"
+                ng-blur="$ctrl.updateTaskTitle({id: todo.id, listId: todo.listId})"
+        >
+        <button 
+            ng-if="todo.done === true" 
+            ng-click="$ctrl.toggleStatus({id: todo.id, listId: todo.listId})" 
+            class="button board-details__todo-button board-details__todo-button--cancel"
+        >Cancel</button>
+        <button 
+            ng-if="todo.done === false" 
+            ng-click="$ctrl.toggleStatus({id: todo.id, listId: todo.listId})" 
+            class="button board-details__todo-button board-details__todo-button--done"
+        >Done</button>
+    </div>
+    <div class="board-details__add-list-item">
+        <form>
+            <input 
+                ng-model="$ctrl.newTaskTitle"
+                type="text" 
+                class="board-details__add-list-item-input"
+                placeholder="New task title"
+            >
+            <button
+                class="button board-details__add-list-item-button"
+                ng-click="$ctrl.addTask({listId: $ctrl.list.id, title: $ctrl.newTaskTitle})"
+                type="submit"
+            >Add</button>
+        </form> 
+    </div>
+</div>

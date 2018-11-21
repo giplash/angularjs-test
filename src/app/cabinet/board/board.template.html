@@ -6,61 +6,19 @@
     <div ng-if="$ctrl.isLoading === false">
         <h3 class="board-details__header"><span>Board:</span> {{ $ctrl.title }}</h3>
         <div class="board-details__columns">
-            <div 
-                ng-repeat="item in $ctrl.lists" 
-                tt-drop-container 
-                tt-callback="$ctrl.handleDrop(data, dropData)" 
-                tt-drop-data="{id: item.id}" 
-                class="board-details__column"
+            <tt-column 
+                ng-repeat="item in $ctrl.lists"
+                list="item"
+                handle-drop="$ctrl.handleDrop(data, dropData)"
+                toggle-status="$ctrl.toggleStatus(id, listId)"
+                update-task-title="$ctrl.updateTaskTitle(id, listId)"
+                remove-list="$ctrl.removeList(listId)"
+                remove-list-item="$ctrl.removeListItem(id, listId)"
+                add-task="$ctrl.addTask(listId, title)"
+                add-list="$ctrl.addList()"
             >
-                <span 
-                    class="icon icon--remove board-details__remove-list-icon"
-                    ng-click="$ctrl.removeList(item.id)"
-                ></span>
-                <h5 class="board-details__column-title">{{ item.title }}</h5>
-                <div 
-                    ng-repeat="todo in item.todo" 
-                    tt-draggable-element 
-                    tt-data="todo" 
-                    class="board-details__column-item" 
-                    ng-class="{'board-details__column-item--done': todo.done}"
-                >
-                    <span 
-                        class="icon icon--remove board-details__remove-column-item-icon"
-                        ng-click="$ctrl.removeListItem(todo.id, todo.listId)"
-                    ></span>
-                    <input 
-                        ng-model="todo.title" 
-                        class="board-details__input" type="text"
-                        ng-blur="$ctrl.updateTaskTitle(todo.id, todo.listId)"
-                    >
-                    <button 
-                        ng-if="todo.done === true" 
-                        ng-click="$ctrl.toggleStatus(todo.id, todo.listId)" 
-                        class="button board-details__todo-button board-details__todo-button--cancel"
-                    >Cancel</button>
-                    <button 
-                        ng-if="todo.done === false" 
-                        ng-click="$ctrl.toggleStatus(todo.id, todo.listId)" 
-                        class="button board-details__todo-button board-details__todo-button--done"
-                    >Done</button>
-                </div>
-                <div class="board-details__add-list-item">
-                    <form>
-                        <input 
-                            ng-model="$ctrl.newTasks[item.id].value"
-                            type="text" 
-                            class="board-details__add-list-item-input"
-                            placeholder="New task title"
-                        >
-                        <button
-                            class="button board-details__add-list-item-button"
-                            ng-click="$ctrl.addTask(item.id)"
-                            type="submit"
-                        >Add</button>
-                    </form> 
-                </div>
-            </div>
+                
+            </tt-column>
             <div class="board-details__add-column-container">
                 <form>
                     <input 
