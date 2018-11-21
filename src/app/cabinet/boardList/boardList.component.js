@@ -23,18 +23,12 @@ class Controller {
     handleItemClick(id) {
         this.$state.go('app.cabinet.board-details', { id });
     }
-
-    _generateBoardId() {
-        let id = 0;
-        do {
-            id++;
-        } while(this.boards.some(item => item.id === id));
-        return id;
-    }
+   
 
     addBoard() {
+        if (this.newBoardTitle.length === 0) return;
         const obj = {
-            id: this._generateBoardId(),
+            id: this.todo.generateBoardId(this.boards),
             title: this.newBoardTitle
         }
         this.boards.push(obj)

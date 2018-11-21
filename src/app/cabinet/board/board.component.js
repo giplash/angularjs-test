@@ -70,7 +70,7 @@ class Controller {
         this.todo.removeList(listId);
     }
 
-    removeListItem(id, listId) {        
+    removeTask(id, listId) {        
         const list = this.lists.find(item => item.id === listId);
         list.todo = list.todo.filter(item => item.id !== id);
         this.todo.removeTask(id);

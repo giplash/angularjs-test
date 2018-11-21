@@ -5,8 +5,9 @@ class Controller {
         this.newTaskTitle = '';
     }
 
-    $onInit() {
-        window.ctrl = this;
+    addTaskWrapper() {
+        this.addTask({listId: this.list.id, title: this.newTaskTitle});
+        this.newTaskTitle = '';
     }
 }
 
@@ -20,7 +21,7 @@ export default {
         toggleStatus: '&',
         updateTaskTitle: '&',
         removeList: '&',
-        removeListItem: '&',
+        removeTask: '&',
         addTask: '&',
         addList: '&'
     }

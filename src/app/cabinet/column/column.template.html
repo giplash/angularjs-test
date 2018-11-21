@@ -14,7 +14,7 @@
         todo="todo"
         toggle-status="$ctrl.toggleStatus({id: id, listId: listId})"
         update-task-title="$ctrl.updateTaskTitle({id: id, listId: listId})"
-        remove-list-item="$ctrl.removeListItem({id: id, listId: listId})"
+        remove-task="$ctrl.removeTask({id: id, listId: listId})"
     >        
     </tt-task>
     <div class="board-details__add-list-item">
@@ -27,7 +27,7 @@
             >
             <button
                 class="button board-details__add-list-item-button"
-                ng-click="$ctrl.addTask({listId: $ctrl.list.id, title: $ctrl.newTaskTitle})"
+                ng-click="$ctrl.addTaskWrapper()"
                 type="submit"
             >Add</button>
         </form> 

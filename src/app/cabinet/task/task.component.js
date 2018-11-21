@@ -12,6 +12,6 @@ export default {
         todo: '<',
         toggleStatus: '&',
         updateTaskTitle: '&',
-        removeListItem: '&'
+        removeTask: '&'
     }
 }

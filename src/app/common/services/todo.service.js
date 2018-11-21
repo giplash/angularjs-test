@@ -7,6 +7,14 @@ export default class Todo {
         this.$q = $q;
     }
 
+    generateBoardId(boards) {
+        let id = 0;
+        do {
+            id++;
+        } while(boards.some(item => item.id === id));
+        return id;
+    }
+
     generateListId(lists) {
         let id = 0;
         do {
